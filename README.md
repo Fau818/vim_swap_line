@@ -11,7 +11,7 @@ To do this, you only need to add the following code into your `vimrc`.
 为了实现下列操作, 你只需要把下列代码放入你的`vimrc`中.
 
 ```
-#################### Don't change this ####################
+" #################### Don't change this ####################
 function Fau_move_line_down()
 	let pos = getpos('.')[1:]
 	let pos[0] = pos[0] + 1
@@ -27,13 +27,14 @@ function Fau_move_line_up()
 	execute 'normal! kddp'
 	call cursor(pos)	
 endfunction
-#################### Don't change this ####################
+" #################### Don't change this ####################
 
 
 
-# Here is your customization
-# You can map <A-j> and <A-k> to any key you like.
+" Here is your customization
+" You can map <A-j> and <A-k> to any key you like.
 
 noremap <silent> <A-j> :call Fau_move_line_down()<CR> 
 noremap <silent> <A-k> :call Fau_move_line_up()<CR>
 ```
+
